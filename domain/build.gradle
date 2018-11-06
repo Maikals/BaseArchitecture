@@ -1,0 +1,17 @@
+apply plugin: 'java-library'
+apply plugin: 'kotlin'
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    //Kotlin dependencies
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+
+    // LiveData
+    implementation "androidx.lifecycle:lifecycle-livedata:$rootProject.ext.lifecycle"
+
+
+}
+
+sourceCompatibility = "8"
+targetCompatibility = "8"
