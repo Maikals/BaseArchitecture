@@ -10,6 +10,8 @@ dependencies {
     // LiveData
     implementation "androidx.lifecycle:lifecycle-livedata:$rootProject.ext.lifecycle"
 
+    // Test dependencies
+    testImplementation "io.mockk:mockk:$rootProject.ext.mockK"
 
 }
 

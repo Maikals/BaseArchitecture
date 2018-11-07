@@ -37,10 +37,10 @@ dependencies {
 
     // Test dependencies
     testImplementation 'junit:junit:4.12'
+    testImplementation "io.mockk:mockk:$rootProject.ext.mockK"
     androidTestImplementation "androidx.test.espresso:espresso-core:$rootProject.ext.espressoCore"
     androidTestImplementation "androidx.test.ext:junit:$rootProject.ext.androidJUnit"
-
-
+    androidTestImplementation "io.mockk:mockk-android:$rootProject.ext.mockK"
 
     implementation project(":data")
     implementation project(":domain")
