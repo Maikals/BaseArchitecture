@@ -10,9 +10,14 @@ dependencies {
     // LiveData
     implementation "androidx.lifecycle:lifecycle-livedata:$rootProject.ext.lifecycle"
 
+    // Coroutines
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:$rootProject.ext.coroutines"
+
     // Test dependencies
     testImplementation "io.mockk:mockk:$rootProject.ext.mockK"
 
+    // Koin
+    implementation "org.koin:koin-core:$koin"
 }
 
 sourceCompatibility = "8"

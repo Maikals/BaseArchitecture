@@ -13,7 +13,7 @@ android {
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode rootProject.ext.versionCode
         versionName rootProject.ext.versionName
-        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
         release {
@@ -34,6 +34,7 @@ dependencies {
 
     // Koin dependencies
     implementation "org.koin:koin-android:$rootProject.ext.koin"
+    implementation "org.koin:koin-androidx-viewmodel:$rootProject.ext.koin"
 
     // Test dependencies
     testImplementation 'junit:junit:4.12'
