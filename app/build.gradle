@@ -37,7 +37,7 @@ dependencies {
     implementation "org.koin:koin-androidx-viewmodel:$rootProject.ext.koin"
 
     // Test dependencies
-    testImplementation 'junit:junit:4.12'
+    testImplementation "junit:junit:$rootProject.ext.jUnit"
     testImplementation "io.mockk:mockk:$rootProject.ext.mockK"
     androidTestImplementation "androidx.test.espresso:espresso-core:$rootProject.ext.espressoCore"
     androidTestImplementation "androidx.test.ext:junit:$rootProject.ext.androidJUnit"

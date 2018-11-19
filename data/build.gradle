@@ -33,7 +33,7 @@ dependencies {
     implementation "androidx.lifecycle:lifecycle-livedata:$rootProject.ext.lifecycle"
 
     // Test dependencies
-    testImplementation 'junit:junit:4.12'
+    testImplementation "junit:junit:$rootProject.ext.jUnit"
     testImplementation "io.mockk:mockk:$rootProject.ext.mockK"
     androidTestImplementation "androidx.test.ext:junit:$rootProject.ext.androidJUnit"
     androidTestImplementation "androidx.test.espresso:espresso-core:$rootProject.ext.espressoCore"

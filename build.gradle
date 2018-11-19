@@ -36,6 +36,7 @@ ext {
     versionName = '1.0.0'
     androidx = '1.0.2'
     koin = '1.0.2'
+    jUnit = '4.12'
     testRunner = '1.1.0'
     espressoCore = '3.1.0'
     androidJUnit = '1.0.0'
