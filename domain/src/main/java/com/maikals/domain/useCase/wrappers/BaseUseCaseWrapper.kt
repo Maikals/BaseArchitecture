@@ -14,13 +14,13 @@ abstract class BaseUseCaseWrapper {
     private val map: HashMap<KClass<*>, BaseUseCase<BaseEntity, BaseParams>> = HashMap()
 
     protected fun <T : BaseUseCase<*, *>> addUseCases(vararg useCase: T) =
-            useCase.forEach { useCaseIterator ->
-                try {
-                    map[useCaseIterator::class] = useCaseIterator as BaseUseCase<BaseEntity, BaseParams>
-                } catch (e: Exception) {
-                    print(TAG + "UseCase does not extend from BaseCoRoutineUseCase<BaseEntity, BaseParams>, please check Usecases used")
-                }
+        useCase.forEach { useCaseIterator ->
+            try {
+                map[useCaseIterator::class] = useCaseIterator as BaseUseCase<BaseEntity, BaseParams>
+            } catch (e: Exception) {
+                print(TAG + "UseCase does not extend from BaseCoRoutineUseCase<BaseEntity, BaseParams>, please check Use Cases used")
             }
+        }
 
     fun <T : BaseUseCase<*, *>> getUseCase(classType: KClass<T>): BaseUseCase<BaseEntity, BaseParams>? = map[classType]
 

@@ -1,8 +1,8 @@
 apply plugin: 'com.android.application'
 
 apply plugin: 'kotlin-android'
-
 apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
 
 android {
     compileSdkVersion rootProject.ext.compileSdkVersion
@@ -42,6 +42,8 @@ dependencies {
     androidTestImplementation "androidx.test.espresso:espresso-core:$rootProject.ext.espressoCore"
     androidTestImplementation "androidx.test.ext:junit:$rootProject.ext.androidJUnit"
     androidTestImplementation "io.mockk:mockk-android:$rootProject.ext.mockK"
+    implementation "com.github.bumptech.glide:glide:$rootProject.ext.glide"
+    kapt "com.github.bumptech.glide:compiler:$rootProject.ext.glide"
 
     implementation project(":data")
     implementation project(":domain")

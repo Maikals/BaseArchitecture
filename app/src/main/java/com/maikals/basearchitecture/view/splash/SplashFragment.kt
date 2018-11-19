@@ -3,7 +3,7 @@ package com.maikals.basearchitecture.view.splash
 import com.maikals.basearchitecture.R
 import com.maikals.basearchitecture.view.base.BaseFragment
 
-class SplashFragment: BaseFragment() {
+class SplashFragment : BaseFragment() {
 
     companion object {
         const val TAG = "SplashFragment"
